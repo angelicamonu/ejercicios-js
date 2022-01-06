@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejemplo1</title>
+    <title>ejemplo1 y 2</title>
+    <script>
+        function myFunction() {
+          document.getElementById("demo2").innerHTML = "Un texto cambiado.";
+        }
+    </script>
 </head>
 <body>
     <h2>Que puede hacer JavaScript?</h2>
 
     <p id="demo">JavaScript puede cambiar el contenido HTML.</p>
-
     <button type="button" onclick='document.getElementById("demo").innerHTML = "Hola JavaScript!"'>Haz Click!</button>
+    
+    <p id="demo2">Un texto primero cualquiera.</p>
+    <button type="button" onclick="myFunction()">Cambia el texto</button>
 
 </body>
 </html>
